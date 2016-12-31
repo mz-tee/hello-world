@@ -1,3 +1,3 @@
 package business;
 
-public enum Gender{Female ,Male, Other}
+public enum Gender{Female ,Male}
