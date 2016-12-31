@@ -70,7 +70,7 @@ public class Location implements Serializable
     public boolean setStreet(String street)
     {
         if (street == null)
-            return fa;
+            return false;
         this.street = street;
         return true;
     }
@@ -83,9 +83,9 @@ public class Location implements Serializable
     public boolean setZip(int zip)
     {
         if (zip >= 1000000000 || zip < 0) // zip should be 5 or 9 digits
-            return 0;
+            return false;
         this.zip = zip;
-        return tr;
+        return true;
     }
 
     // ------[MEMBER VARIABLES]------ //
